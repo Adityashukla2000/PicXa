@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D4CCCC"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Generate Image Using AI">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imgId"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:background="@color/black"
+                ></ImageView>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editId"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+               android:background="@drawable/edit_text"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Write here...........">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+
+            <Button
+                android:id="@+id/genId"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Generate"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/black"
+                android:textStyle="bold"
+                ></Button>
+
+            <ProgressBar
+               android:id="@+id/progressId"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:indeterminateTint="@color/black">
+
+            </ProgressBar>
+
+            <Button
+                android:id="@+id/saveId"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:backgroundTint="@color/black"
+                android:textStyle="bold"
+                ></Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
